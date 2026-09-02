@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PHY3201 Course Studio</title>
+<meta name="description" content="Interactive course studio for PHY3201 Solid State Physics — 9 topics, 42 lecture hours, 14 weeks. Universiti Putra Malaysia.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;700&display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%2317275C'/><g fill='%23fff'><circle cx='9' cy='9' r='2.6'/><circle cx='23' cy='9' r='2.6'/><circle cx='9' cy='23' r='2.6'/><circle cx='23' cy='23' r='2.6'/><circle cx='16' cy='16' r='2.6'/></g></svg>">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="brandbar">
+  <button class="menu-btn" id="menuBtn" aria-label="Open navigation" aria-expanded="false"><span></span></button>
+  <!-- Official UPM identity, small-size configuration: the shield mark plus the university
+       name set in type. The full horizontal lockup (assets/img/upm-logo.png) is designed for
+       letterheads — at 44px its two tagline lines render at ~2.5px and turn to mud. To use it
+       anyway, point src at upm-logo.png, set width/height to 288/132, and delete the
+       brandbar__univ span. See README §7. -->
+  <a class="brandbar__logolink" href="#home" aria-label="Universiti Putra Malaysia — PHY3201 course home">
+    <img class="brandbar__logo" id="brandLogo" src="assets/img/upm-shield.png"
+         width="98" height="108" alt="Universiti Putra Malaysia"
+         onerror="this.parentNode.remove();document.getElementById('brandMark').hidden=false">
+    <span class="brandbar__univ">Universiti Putra<br>Malaysia</span>
+  </a>
+  <!-- Shown only if the image file is missing, so a broken image can never reach a page. -->
+  <div class="brandbar__mark" id="brandMark" hidden>
+    <svg class="brandbar__glyph" viewBox="0 0 32 32" aria-hidden="true" focusable="false">
+      <rect x="6" y="6" width="20" height="20" rx="2" fill="none" stroke="currentColor" stroke-width="1.2" opacity=".35"/>
+      <circle cx="6" cy="6" r="2.6"/><circle cx="26" cy="6" r="2.6"/>
+      <circle cx="6" cy="26" r="2.6"/><circle cx="26" cy="26" r="2.6"/>
+      <circle cx="16" cy="16" r="3.1"/>
+    </svg>
+    <span class="brandbar__univ">Universiti Putra<br>Malaysia</span>
+  </div>
+  <span class="brandbar__code">PHY3201</span>
+  <span class="brandbar__sep"></span>
+  <span class="brandbar__title">Solid State Physics · Course Studio</span>
+  <span class="brandbar__spacer"></span>
+  <span class="brandbar__meta" id="brandMeta">3 credits · 14 weeks · 42 lecture hours</span>
+</header>
+
+<div class="shell">
+  <nav class="sidebar" id="sidebar" aria-label="Course navigation">
+    <div class="sidebar__progress">
+      <div class="sidebar__progress-label"><span>Topics visited</span><span id="progCount">0 / 9</span></div>
+      <div class="bar"><i id="progBar" style="width:0%"></i></div>
+    </div>
+    <div id="navRoot" class="nav"></div>
+  </nav>
+
+  <main class="main" id="main">
+    <div class="wrap" id="view" tabindex="-1"></div>
+  </main>
+</div>
+
+<script src="assets/js/glossary.js"></script>
+<script src="assets/js/diagrams.js"></script>
+<script src="assets/js/content/home.js"></script>
+<script src="assets/js/content/map.js"></script>
+<script src="assets/js/content/assessment.js"></script>
+<script src="assets/js/content/topic01.js"></script>
+<script src="assets/js/content/topic02.js"></script>
+<script src="assets/js/content/topic03.js"></script>
+<script src="assets/js/content/topic04.js"></script>
+<script src="assets/js/content/topic05.js"></script>
+<script src="assets/js/content/topic06.js"></script>
+<script src="assets/js/content/topic07.js"></script>
+<script src="assets/js/content/topic08.js"></script>
+<script src="assets/js/content/topic09.js"></script>
+<script src="assets/js/content/practice.js"></script>
+<script src="assets/js/content/p4ph.js"></script>
+<script src="assets/js/content/references.js"></script>
+<script src="assets/js/widgets.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
